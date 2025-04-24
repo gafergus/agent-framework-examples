@@ -567,7 +567,7 @@ class ChainOfThoughtAgent:
                      fontsize=10, color='gray')
 
             # Save the map
-            output_path = "agent_results/us_population_density_cot.png"
+            output_path = "us_population_density_cot.png"
             plt.savefig(output_path, dpi=300, bbox_inches="tight")
             plt.close()
 

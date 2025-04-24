@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "llm-agent-frameworks"
+version = "0.1.0"
+description = "Implementations of ReAct, MRKL, and Chain-of-Thought LLM agent frameworks for geospatial data visualization"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/yourusername/llm-agent-frameworks"
+keywords = ["llm", "agents", "react", "mrkl", "chain-of-thought", "geospatial"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+anthropic = "^0.14.0"
+pandas = "^2.1.0"
+geopandas = "^0.14.0"
+matplotlib = "^3.8.0"
+seaborn = "^0.13.0"
+numpy = "^1.26.0"
+requests = "^2.31.0"
+tabulate = "^0.9.0"
+python-dotenv = "^1.0.0"
+Pillow = "^10.0.0"
+crew-ai = "^0.2.0"
+mapclassify = "^2.8.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+black = "^23.9.1"
+isort = "^5.12.0"
+flake8 = "^6.1.0"
+mypy = "^1.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ["py38"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"

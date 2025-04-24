@@ -317,7 +317,7 @@ class MRKLAgent:
             ax.set_axis_off()
             
             # Save the map
-            output_path = "agent_results/us_population_density_mrkl.png"
+            output_path = "us_population_density_mrkl.png"
             plt.savefig(output_path, dpi=300, bbox_inches="tight")
             plt.close()
             
